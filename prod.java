@@ -1,27 +1,27 @@
 import java.io*;
 import java.util.*;
+import java.util.Arrays;
 public class prod
 {
 public static void main(String args[])
 {
-Scanner s=new Scanner(System.in);
-int n=s.nextInt();
-int a[]=new int[];
-for(int i=0;i<a.length;i++)
+  int product=1;
+int a[]=new int[args.length];
+for(int i=0;i<args.length;i++)
 {
-a[i]=Integer.parseInt();
+a[i]=Integer.parseInt(args[i]);
 }
-for(int i=0;i<a.length;i++)
+for(int j=0;j<args.length;j++)
 {
-product=1;
-for(int j=0;j<a.length;j++)
+for(int k=0;k<args.length;k++)
 {
-if(i!=j)
+if(j!=k)
 {
-product=product*b[j];
+product=product*a[k];
 }
 }
-System.out.println(product+" ");
+System.out.println(product);
+  product=1;
 }
 }
 }
